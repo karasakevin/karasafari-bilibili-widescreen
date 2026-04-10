@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "B站自动宽屏",
+  "version": "1.0.0",
+  "description": "在哔哩哔哩播放视频时自动切换到宽屏模式。",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.bilibili.com/*",
+        "https://bilibili.com/*",
+        "https://*.bilibili.tv/*",
+        "https://bilibili.tv/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
+
